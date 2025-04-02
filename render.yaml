@@ -1,9 +1,6 @@
 services:
   - type: web
-    name: flask-backend
-    env: python
+    name: name-analyzer-backend
+    runtime: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python myapp.py"
-    envVars:
-      - key: PORT
-        value: 5000
+    startCommand: "python app.py"
